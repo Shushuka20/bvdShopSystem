@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "bvdShopSystem", "bvdShopSystem\bvdShopSystem.shproj", "{936831CA-EB9A-43A5-B0F1-C08E5046DE0E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{8A3C53D4-4DC9-4F23-8B16-D2C26B45E86B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F392319B-E1B7-4FFE-9D26-ACBEA9A52CE6} = {F392319B-E1B7-4FFE-9D26-ACBEA9A52CE6}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUI", "WebUI\WebUI.csproj", "{5675CC7B-8C0F-4A64-8B81-27C33B1015A8}"
 	ProjectSection(ProjectDependencies) = postProject
