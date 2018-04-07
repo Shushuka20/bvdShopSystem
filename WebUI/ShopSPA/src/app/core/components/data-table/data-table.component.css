@@ -1,0 +1,23 @@
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+
+table tr {
+    height: 56px;
+    vertical-align: middle;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0,0,0,.12);
+}
+
+table tr th {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+table tr td {
+    font-size: 14px;
+}

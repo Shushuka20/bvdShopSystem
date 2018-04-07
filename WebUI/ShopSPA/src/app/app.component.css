@@ -1,0 +1,16 @@
+.page-wrapper {
+    flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    padding-left: 153px;
+    padding-top: 80px;  
+}
+
+.content-wrapper {
+    flex: 1 auto;
+    -ms-flex: 1 auto;
+    overflow: hidden;
+}

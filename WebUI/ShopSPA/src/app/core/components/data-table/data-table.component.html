@@ -1,0 +1,12 @@
+<table>
+  <thead>
+    <tr>
+      <th *ngFor="let key of _dataKeys" (click)="sortColumn(key)">{{key}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of _dataSource | async">
+      <td *ngFor='let key of _dataKeys'>{{data[key]}}</td>
+    </tr>
+  </tbody>
+</table>

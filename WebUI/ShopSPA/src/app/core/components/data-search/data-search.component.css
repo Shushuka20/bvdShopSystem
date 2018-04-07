@@ -1,0 +1,22 @@
+.input-wrapper {
+    width: 100%;
+}
+
+input {
+    padding: 10px 0px 10px 40px;
+    border:1px solid #ebedf2;
+    color: #222;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    outline: none;
+    transition: .3s;
+    -webkit-box-shadow: 0 1px 15px 1px rgba(69,65,78,.08);
+    box-shadow: 0 1px 15px 1px rgba(69,65,78,.08);
+}
+
+input:focus {
+    border-color: #ffa305;
+}

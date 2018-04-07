@@ -1,0 +1,42 @@
+.sidebar {
+    width: 157px;
+    flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    height: 869px;
+    overflow: visible;
+    z-index: 9;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #171513;
+}
+
+ul.sidebar-menu {
+    list-style: none;
+    padding: 40px 0 30px 0px;
+}
+
+li.s-menu_item {
+    display: block;
+    height: auto;
+    padding: 0;
+}
+
+li.s-menu_item a {
+    display: block;
+    position: relative;
+    text-align: center;
+    height: auto;
+    text-decoration: none;
+    padding: 15px 13px;
+    color: #fff;
+    font-weight: normal;
+    transition: .3s;
+}
+
+li.s-menu_item a:hover {
+    background-color: #222;
+    color: rgb(255, 131, 8);
+}

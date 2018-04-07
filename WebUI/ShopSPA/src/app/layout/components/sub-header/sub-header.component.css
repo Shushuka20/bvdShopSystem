@@ -1,0 +1,17 @@
+h4{
+    margin: 0;
+    color: #fff;
+    font-weight: normal;
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.sub-header {
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(to bottom right, #ff7a05, #ffa305);
+    z-index: 1;
+    display: table;
+    padding: 0 20px;
+}
