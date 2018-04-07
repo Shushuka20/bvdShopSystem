@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Base;
+using Base.Services.Abstract;
+using Base.Services.Concrete;
 using Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,6 +29,9 @@ namespace WebUI
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<ShopContext>(options =>
                 options.UseSqlServer(connection));
+
+            services.AddTransient(typeof(IBaseObjectService<>), typeof(BaseObjectService<>));
+            services.AddTransient<DbContext, ShopContext>();
 
             services.AddMvc();
         }
