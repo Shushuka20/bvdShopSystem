@@ -16,13 +16,11 @@ namespace WebUI.Controllers
 {
     public class HomeController : Controller
     {
-        //private ShopContext _db;
         private readonly IBaseObjectService<Sale> _saleService;
 
-        public HomeController(/*ShopContext context*/ IBaseObjectService<Sale> saleService)
+        public HomeController(IBaseObjectService<Sale> saleService)
         {
             _saleService = saleService;
-            // _db = context;
         }
 
         public IActionResult Index()

@@ -1,5 +1,6 @@
 ﻿using Base.Services.Abstract;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace Base.Services.Concrete
 {
@@ -12,25 +13,27 @@ namespace Base.Services.Concrete
             _context = context;
         }
 
-        public T Get(int id)
+        private DbSet<T> DbSet => _context.Set<T>();
+
+        public virtual T Get(int id)
         {
-             return _context.Set<T>().Find(id);
-            throw new System.NotImplementedException();
+            return DbSet.Find(id);
         }
 
-        public T Create(T obj)
+        public virtual T Create(T obj)
         {
-            throw new System.NotImplementedException();
+            return DbSet.Add(obj).Entity;
         }
 
-        public T Update(T obj)
+        public virtual T Update(T obj)
         {
-            throw new System.NotImplementedException();
+            _context.Entry(obj).State = EntityState.Modified;
+            return Get(obj.Id);
         }
 
-        public void Delete(T obj)
+        public virtual void Delete(T obj)
         {
-            throw new System.NotImplementedException();
+            DbSet.Remove(obj);
         }
     }
 }
